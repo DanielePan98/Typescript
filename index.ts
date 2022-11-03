@@ -59,3 +59,26 @@ const nuovoAlunno = new Alunno('Daniele', 'Pan', 24, [
 
 nuovoAlunno.addHobbies('pittura');
 console.log('nome: ', nuovoAlunno);
+
+interface DatiCliente {
+  nome: string;
+  cognome: string;
+  eta: number;
+  telefono?: number;
+  [key: string]: any;
+
+  stampaValori: () => void;
+}
+
+class NuovoCliente implements DatiCliente {
+  nome = 'Danilo';
+  cognome = 'De Filio';
+  eta = 47;
+
+  stampaValori() {
+    console.log(this.nome, this.cognome, this.eta);
+  }
+}
+
+const nuovo = new NuovoCliente();
+nuovo.stampaValori();
