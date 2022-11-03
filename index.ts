@@ -28,37 +28,37 @@ function somma(a: number, b: number): string | number {
 const risultato = somma(2, 7);
 console.log(risultato);*/
 
-class Alunno {
-  nome: string;
-  cognome: string;
-  eta: number;
-  hobbies: string[];
+// class Alunno {
+//   nome: string;
+//   cognome: string;
+//   eta: number;
+//   hobbies: string[];
 
-  constructor(
-    nomeAlunno: string,
-    cognomeAlunno: string,
-    etaAlunno: number,
-    hobbies: string[]
-  ) {
-    this.nome = nomeAlunno;
-    this.cognome = cognomeAlunno;
-    this.eta = etaAlunno;
-    this.hobbies = hobbies;
-  }
+//   constructor(
+//     nomeAlunno: string,
+//     cognomeAlunno: string,
+//     etaAlunno: number,
+//     hobbies: string[]
+//   ) {
+//     this.nome = nomeAlunno;
+//     this.cognome = cognomeAlunno;
+//     this.eta = etaAlunno;
+//     this.hobbies = hobbies;
+//   }
 
-  addHobbies(nuovoHobby: string) {
-    this.hobbies.push(nuovoHobby);
-  }
-}
+//   addHobbies(nuovoHobby: string) {
+//     this.hobbies.push(nuovoHobby);
+//   }
+// }
 
-const nuovoAlunno = new Alunno('Daniele', 'Pan', 24, [
-  'Pc',
-  'Mangiare',
-  'Netflix',
-]);
+// const nuovoAlunno = new Alunno('Daniele', 'Pan', 24, [
+//   'Pc',
+//   'Mangiare',
+//   'Netflix',
+// ]);
 
-nuovoAlunno.addHobbies('pittura');
-console.log('nome: ', nuovoAlunno);
+// nuovoAlunno.addHobbies('pittura');
+// console.log('nome: ', nuovoAlunno);
 
 interface DatiCliente {
   nome: string;
